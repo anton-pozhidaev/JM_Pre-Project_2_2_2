@@ -7,7 +7,7 @@
         <packaging>war</packaging>
       </options>
     </properties>
-    <root id="archive" name="jm_pre-project_2_2_2.war">
+    <root id="archive" name="JM_Pre-Project_2_2_2.war">
       <element id="artifact" artifact-name="JM_Pre-Project_2_2_2:war exploded" />
     </root>
   </artifact>

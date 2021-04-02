@@ -19,14 +19,13 @@ public class CarServiceImpl implements CarService {
         initCarsList.add(new Car("Tesla", "Model X", 2021));
     }
 
-    public List<Car> getCarsFromInitCarsList(int carsCount) {
-        if (initCarsList.size() == 0 || initCarsList.size() < carsCount) {
+    public List<Car> getCarsFromInitCarsList(Integer carsCount) {
+        if (carsCount == null || initCarsList.size() < carsCount) {
             return initCarsList;
         }
         if (carsCount <= 0) {
             return new ArrayList<>();
         }
-
         return initCarsList.subList(0, carsCount);
     }
 }
